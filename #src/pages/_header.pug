@@ -1,0 +1,155 @@
+header.header
+	.container
+		a(href="/").header__logo
+			img(src="assets/img/logo.svg", alt="").header__logo-img
+		.header__row
+			nav.header-nav
+				.header-nav__link(data-nav-more="moreNavAbout")
+					| О компании
+				.header-nav__link(data-nav-more="moreNavSolution") Решения
+				a(href="#").header-nav__link Карьера
+				a(href="#").header-nav__link Контакты
+			.header-controls
+				button.header-controls__lang En
+				button.header-controls__search
+					<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M15.59 9.13641C15.59 12.902 12.5373 15.9546 8.77178 15.9546C5.0062 15.9546 1.9536 12.902 1.9536 9.13641C1.9536 5.37083 5.0062 2.31823 8.77178 2.31823C12.5373 2.31823 15.59 5.37083 15.59 9.13641ZM14.5572 14.9219C13.0766 16.4024 11.0311 17.3182 8.77178 17.3182C4.25309 17.3182 0.589966 13.6551 0.589966 9.13641C0.589966 4.61772 4.25309 0.95459 8.77178 0.95459C13.2905 0.95459 16.9536 4.61772 16.9536 9.13641C16.9536 10.9034 16.3934 12.5397 15.441 13.8771L20.3331 18.7693L19.369 19.7336L14.5572 14.9219Z" fill="black"/>
+					</svg>
+				button.header-controls__callback.base-button(data-modal-open="callback-modal")
+					| связаться с нами
+					<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16.1709 3.69401C16.2781 3.29391 16.0406 2.88266 15.6405 2.77546L9.12049 1.02843C8.72039 0.921221 8.30914 1.15866 8.20193 1.55876C8.09473 1.95886 8.33216 2.37011 8.73226 2.47732L14.5278 4.03023L12.9749 9.82578C12.8677 10.2259 13.1052 10.6371 13.5053 10.7443C13.9054 10.8516 14.3166 10.6141 14.4238 10.214L16.1709 3.69401ZM1.96497 12.1494L15.8214 4.14942L15.0714 2.85038L1.21497 10.8504L1.96497 12.1494Z" fill="black"/>
+					</svg>
+
+		.header-nav-more.header-nav-more--row#moreNavSolution
+			.header-nav-more__column.header-nav-more__column--always-active
+				p.header-nav-more__title Решения
+				p.header-nav-more__links
+					a(href="#" data-more-level="firstLevelOne").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-09.svg", alt="")
+						| Бизнес направления
+					a(href="#" data-more-level="secondLevelOne").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-10.svg", alt="")
+						| Производственные мощности
+					a(href="#" data-more-level="thirdLevelOne").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-11.svg", alt="")
+						| Продукция
+			.header-nav-more__column.js-more-level#firstLevelOne
+				p.header-nav-more__title Бизнес направления
+				p.header-nav-more__links
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-09.svg", alt="")
+						| Системы механизированной добычи
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-09.svg", alt="")
+						| Буровые долота
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-09.svg", alt="")
+						| Буровые сервисы
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-09.svg", alt="")
+						| Буровые растворы и жидкости заканчивания
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-09.svg", alt="")
+						| Заканчивание скважин и КРС
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-09.svg", alt="")
+						| Внутрискважинные операции
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-09.svg", alt="")
+						| Интегрированные скважинные сервисы
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-09.svg", alt="")
+						| Геология и разработка месторождений
+			.header-nav-more__column.js-more-level#secondLevelOne
+				p.header-nav-more__title Производственные мощности
+				p.header-nav-more__links
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-10.svg", alt="")
+						| Тюменский завод нефтепромыслового оборудования
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-10.svg", alt="")
+						| Ойлпамп Сервис
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-10.svg", alt="")
+						| Цех по производству и ремонту долот
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-10.svg", alt="")
+						| Тюменский производственный комплекс
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-10.svg", alt="")
+						| Центр разработки электронных плат
+			.header-nav-more__column.js-more-level#thirdLevelOne
+				p.header-nav-more__title Продукция
+				p.header-nav-more__links
+					a(href="#").header-nav-more__link(data-more-level="thirdLevelTwoFirst")
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-11.svg", alt="")
+						| Нефтепогружные кабели
+					a(href="#").header-nav-more__link(data-more-level="thirdLevelTwoSecond")
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-12.svg", alt="")
+						| Буровые долота
+			.header-nav-more__column.js-more-level#thirdLevelTwoFirst
+				p.header-nav-more__title Нефтепогружные кабели
+				p.header-nav-more__links
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-11.svg", alt="")
+						| Кабель CELF
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-11.svg", alt="")
+						| Кабель CTTF
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-11.svg", alt="")
+						| Кабель CTHT
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-11.svg", alt="")
+						| Катушка
+			.header-nav-more__column.js-more-level#thirdLevelTwoSecond
+				p.header-nav-more__title Буровые долота
+				p.header-nav-more__links
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-12.svg", alt="")
+						| Долото OTM407SX
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-12.svg", alt="")
+						| Долото OTM405S
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-12.svg", alt="")
+						| Долото OTR505S
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-12.svg", alt="")
+						| Долото OTM606SX
+					a(href="#").header-nav-more__link
+						img.header-nav-more__icon(src="assets/img/header-nav-icon-12.svg", alt="")
+						| Долото OTM505S
+	.header-nav-more#moreNavAbout
+		p.header-nav-more__title О компании
+		p.header-nav-more__links
+			a(href="#").header-nav-more__link
+				img.header-nav-more__icon(src="assets/img/header-nav-icon-01.svg", alt="")
+				| О нас
+			a(href="#").header-nav-more__link
+				img.header-nav-more__icon(src="assets/img/header-nav-icon-02.svg", alt="")
+				| Присутствие
+			a(href="#").header-nav-more__link
+				img.header-nav-more__icon(src="assets/img/header-nav-icon-03.svg", alt="")
+				| Миссия
+			a(href="#").header-nav-more__link
+				img.header-nav-more__icon(src="assets/img/header-nav-icon-04.svg", alt="")
+				| Ценности
+			a(href="#").header-nav-more__link
+				img.header-nav-more__icon(src="assets/img/header-nav-icon-05.svg", alt="")
+				| Стратегическое развитие
+			a(href="#").header-nav-more__link
+				img.header-nav-more__icon(src="assets/img/header-nav-icon-06.svg", alt="")
+				| ОТ, ПБ и ООС
+			a(href="#").header-nav-more__link
+				img.header-nav-more__icon(src="assets/img/header-nav-icon-07.svg", alt="")
+				| Корпоративная этика и и комплаенс
+			a(href="#").header-nav-more__link
+				img.header-nav-more__icon(src="assets/img/header-nav-icon-08.svg", alt="")
+				| Контакты
+
+	//- button.header-burger
+	//- 	span
+	//- 	span
+	//- 	span

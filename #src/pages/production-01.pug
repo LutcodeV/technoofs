@@ -1,0 +1,92 @@
+extends _layout
+
+block main
+	section.section.hero
+		.hero__video-wrapper
+			video(src="").hero__video
+		.container
+			.breadcrumbs
+				a.breadcrumbs__link(href="#") Главная
+				a.breadcrumbs__link(href="#") Решения
+			.hero__column
+				h1.hero__title.h1 Продукция - Нефтепогружные кабели - <br> Кабель CELF
+				.hero__play-button
+					<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M26.5 13.634C27.1667 14.0189 27.1667 14.9811 26.5 15.366L7.75 26.1913C7.08333 26.5762 6.25 26.0951 6.25 25.3253L6.25 3.67468C6.25 2.90488 7.08334 2.42376 7.75 2.80866L26.5 13.634Z" fill="white"/>
+					</svg>
+
+	section.section.info
+		.container
+			h2.section__title.info__title Кабель CELF (Cuprum EPDM Lead Flat)
+			.info__row.info__row--start
+				img.info__img(src="assets/img/placeholder.jpg", alt="")
+				.info__col
+					ul.info__list
+						li.info__list-element Кабели CELF является отраслевым стандартом надежности и долговечности. Этот кабель является топовым продуктом завода ТЗНПО. Его применение гарантирует операторам НОЛЬ отказов оборудования по кабелю. Кабели CELF обеспечивают работу УЭЦН в самых сложных скважинных условиях.
+					ul.info__list
+						li.info__list-element Кабель CELF (Cuprum EPDM Lead Flat) производства «Технологии ОФС» применим в широком диапазоне температур от -40°F (-40°C) до 450°F (232°C).
+					ul.info__list
+						li.info__list-element Кабель CELF — лучший выбор для экстремальных условий в скважине, поскольку он имеет специальную маслостойкую изоляцию из каучука EPDM, обеспечивающую высокую диэлектрическую прочность и отличную устойчивость к декомпрессии
+						li.info__list-element Высокопрочная тканевая оболочка и броня из оцинкованной стали обеспечивают последний уровень защиты.
+					ul.info__list
+						li.info__list-element Особенности и преимущества
+						li.info__list-element Свинцовое покрытие (оболочка) – надежная работа при наличии большого количества Н2S и более 90% СО2
+						li.info__list-element CEL: Высокотемпературный кабель – надежная работа в горячих скважинах
+						li.info__list-element Сплошная медная жила – препятствует миграции газа, упрощает сращивание, снижает габарит кабеля
+						li.info__list-element Бронированный кабель с капиллярными трубками – обеспечивает измерение давления, введение химических реагентов
+						li.info__list-element Броня из оцинкованной стали, нержавеющей стали и сплава Монель
+						li.info__list-element ТУ 3542-003-12540026-2014
+						li.info__list-element 100% изготавливаемого кабеля проверяются системами объективного контроля на каждом этапе производства
+
+					.info__button-wrapper
+						p.info__button-title Связаться с курирующим менеджером
+						button.info__button.base-button
+							| связаться
+							<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.1709 3.69401C16.2781 3.29391 16.0406 2.88266 15.6405 2.77546L9.12049 1.02843C8.72039 0.921221 8.30914 1.15866 8.20193 1.55876C8.09473 1.95886 8.33216 2.37011 8.73226 2.47732L14.5278 4.03023L12.9749 9.82578C12.8677 10.2259 13.1052 10.6371 13.5053 10.7443C13.9054 10.8516 14.3166 10.6141 14.4238 10.214L16.1709 3.69401ZM1.96497 12.1494L15.8214 4.14942L15.0714 2.85038L1.21497 10.8504L1.96497 12.1494Z" fill="black"/>
+							</svg>
+
+	section.section.info.info--green
+		.container
+			.table-wrapper
+				table
+					thead
+						tr
+							th Скважинные параметры
+							th Броня из одинкованной <br> стали
+							th Коррозионностойкое <br> исполнение
+					tbody
+						tr
+							th pH
+							td(colspan=2) 10
+						tr
+							th pH
+							td(colspan=2) 10
+						tr
+							th pH
+							td(colspan=2) 10
+						tr
+							th pH
+							td(colspan=2) 10
+						tr
+							th pH
+							td(colspan=2) 10
+						tr
+							th pH
+							td(colspan=2) 10
+						tr
+							th pH
+							td(colspan=2) 10
+						tr
+							th pH
+							td 10
+							td 10
+						tr
+							th pH
+							td 10
+							td 10
+
+	section.section.info.info--green
+		.container
+			.chart-wrapper
+				canvas(id="lineChart" width="800" height="400").chart

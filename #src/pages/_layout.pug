@@ -1,0 +1,141 @@
+html(lang="ru")
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no')
+		title Технологии ОФС
+		link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+		link(rel='stylesheet' type='text/css' href='assets/css/style.css')
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+	body
+		.global-wrapper
+			include _mixins
+			block header
+				include _header
+			block main
+				main.main
+					block content
+			block footer
+				include _footer
+
+		.modal-wrapper
+			.modal-wrapper__content
+				.modal.modal-callback#callback-modal
+					button.modal-callback__close(data-modal-close="callback-modal")
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M25.9701 27.1377L12.8421 13.7245L13.686 12.8623L26.8139 26.2755L25.9701 27.1377Z" fill="black"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M13.686 12L27.6578 26.2754L25.97 27.9999L11.9982 13.7245L13.686 12Z" fill="black"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M27.1578 13.7244L14.0299 27.1376L13.186 26.2754L26.3139 12.8622L27.1578 13.7244Z" fill="black"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M12.3423 26.2754L26.3141 12L28.0019 13.7244L14.0301 27.9999L12.3423 26.2754Z" fill="black"/>
+						</svg>
+					h1 Сюда нужно подставить форму имеющуюся уже на сайте
+
+				.modal.modal-partners#partners-modal
+					button.modal-partners__close(data-modal-close="partners-modal")
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M25.9701 27.1377L12.8421 13.7245L13.686 12.8623L26.8139 26.2755L25.9701 27.1377Z" fill="black"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M13.686 12L27.6578 26.2754L25.97 27.9999L11.9982 13.7245L13.686 12Z" fill="black"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M27.1578 13.7244L14.0299 27.1376L13.186 26.2754L26.3139 12.8622L27.1578 13.7244Z" fill="black"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M12.3423 26.2754L26.3141 12L28.0019 13.7244L14.0301 27.9999L12.3423 26.2754Z" fill="black"/>
+						</svg>
+					.modal-partners__title.h4 По вопросам сотрудничества
+					form.modal-partners-form
+						.modal-partners-progress
+							.modal-partners-progress__step.active
+								span.modal-partners-progress__title Компания
+								<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2777 4.18442L7.66582 10.2257L4.98269 7.70044L4.89296 7.62513C4.58646 7.40481 4.15243 7.43562 3.88151 7.71131C3.58613 8.01181 3.59557 8.48975 3.90267 8.77888L7.21559 11.8977L7.30674 11.9742C7.64176 12.2142 8.12279 12.151 8.37879 11.8155L13.5049 5.09984L13.5702 5.00321C13.7556 4.67839 13.6706 4.2606 13.3575 4.0316C13.0161 3.78195 12.5326 3.85052 12.2777 4.18442Z" fill="white"/>
+								</svg>
+							.modal-partners-progress__line
+							.modal-partners-progress__step
+								span.modal-partners-progress__title Контактные данные
+								<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2777 4.18442L7.66582 10.2257L4.98269 7.70044L4.89296 7.62513C4.58646 7.40481 4.15243 7.43562 3.88151 7.71131C3.58613 8.01181 3.59557 8.48975 3.90267 8.77888L7.21559 11.8977L7.30674 11.9742C7.64176 12.2142 8.12279 12.151 8.37879 11.8155L13.5049 5.09984L13.5702 5.00321C13.7556 4.67839 13.6706 4.2606 13.3575 4.0316C13.0161 3.78195 12.5326 3.85052 12.2777 4.18442Z" fill="white"/>
+								</svg>
+							.modal-partners-progress__line
+							.modal-partners-progress__step
+								span.modal-partners-progress__title Деятельность
+								<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2777 4.18442L7.66582 10.2257L4.98269 7.70044L4.89296 7.62513C4.58646 7.40481 4.15243 7.43562 3.88151 7.71131C3.58613 8.01181 3.59557 8.48975 3.90267 8.77888L7.21559 11.8977L7.30674 11.9742C7.64176 12.2142 8.12279 12.151 8.37879 11.8155L13.5049 5.09984L13.5702 5.00321C13.7556 4.67839 13.6706 4.2606 13.3575 4.0316C13.0161 3.78195 12.5326 3.85052 12.2777 4.18442Z" fill="white"/>
+								</svg>
+							.modal-partners-progress__line
+							.modal-partners-progress__step
+								span.modal-partners-progress__title Детали
+								<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2777 4.18442L7.66582 10.2257L4.98269 7.70044L4.89296 7.62513C4.58646 7.40481 4.15243 7.43562 3.88151 7.71131C3.58613 8.01181 3.59557 8.48975 3.90267 8.77888L7.21559 11.8977L7.30674 11.9742C7.64176 12.2142 8.12279 12.151 8.37879 11.8155L13.5049 5.09984L13.5702 5.00321C13.7556 4.67839 13.6706 4.2606 13.3575 4.0316C13.0161 3.78195 12.5326 3.85052 12.2777 4.18442Z" fill="white"/>
+								</svg>
+
+						.modal-partners-form__step.active
+							p.p1 Тут поле Название компании
+							p.p1 Тут поле ИНН
+							p.p1 Тут поле Адрес регистрации
+							p.p1 Тут чекбокс Я принимаю условия Пользовательского соглашения и согласен с Политикой конфиденциальности
+
+						.modal-partners-form__step
+							p.p1 Тут поле ФИО
+							p.p1 Тут поле Адрес электронной почты
+							p.p1 Тут поле Телефон
+
+						.modal-partners-form__step
+							p.p1 Тут поле Сколько лет на рынке
+							p.p1 Тут поле Сфера деятельности
+							p.p1 Тут поле Отрасль
+							p.p1 Тут поле Виды деятельности
+							p.p1 Тут поле ОКВЭДы
+
+						.modal-partners-form__step
+							p.p1 Тут поле Оборот млн руб в год
+							p.p1 Тут поле Регион присутствия
+							p.p1 Тут поле Численность персонала
+							p.p1 Тут поле Портфолио заказчиков контрагента
+							p.p1 Тут чекбокс Готовность предоставить пакет документов для проверки на благонадежность
+							.modal-partners-form__files
+								.input-file
+									input.input-file__field(type="file" accept=".pdf,.docx")
+									.input-file__box
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 8H14M8 14V2" stroke="#03BE93" stroke-width="2" stroke-linecap="square"/>
+										</svg>
+									.input-file__column
+										p.input-file__title Загрузите документ
+										p.input-file__subtitle .pdf, .docx. Файл до 2Мб
+								.input-file
+									input.input-file__field(type="file" accept=".pdf,.docx")
+									.input-file__box
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 8H14M8 14V2" stroke="#03BE93" stroke-width="2" stroke-linecap="square"/>
+										</svg>
+									.input-file__column
+										p.input-file__title Загрузите документ
+										p.input-file__subtitle .pdf, .docx. Файл до 2Мб
+								.input-file
+									input.input-file__field(type="file" accept=".pdf,.docx")
+									.input-file__box
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M2 8H14M8 14V2" stroke="#03BE93" stroke-width="2" stroke-linecap="square"/>
+										</svg>
+									.input-file__column
+										p.input-file__title Загрузите документ
+										p.input-file__subtitle .pdf, .docx. Файл до 2Мб
+
+
+						.modal-partners-form__buttons
+							button.modal-partners-form__button.base-button.base-button--outline#prevStep(type='button') Назад
+							button.modal-partners-form__button.base-button.active#nextStep(type='button') Далее
+							button.modal-partners-form__button.base-button#submit
+								| Отправить
+								<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.0809 3.19401C16.1881 2.79391 15.9506 2.38266 15.5505 2.27546L9.03052 0.528427C8.63042 0.421221 8.21917 0.658657 8.11196 1.05876C8.00476 1.45886 8.24219 1.87011 8.64229 1.97732L14.4378 3.53023L12.8849 9.32578C12.7777 9.72588 13.0152 10.1371 13.4153 10.2443C13.8154 10.3516 14.2266 10.1141 14.3338 9.71401L16.0809 3.19401ZM1.875 11.6494L15.7314 3.64942L14.9814 2.35038L1.125 10.3504L1.875 11.6494Z" fill="white"/>
+								</svg>
+
+
+
+	//- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+	//- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.42/build/spline-viewer.js"></script>
+	script(src='assets/scripts/inputmask.min.js')
+	script(src='assets/scripts/linkActivator.js')
+	script(src='assets/scripts/script.js')
+	<script>
+	</script>
