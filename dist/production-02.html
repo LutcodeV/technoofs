@@ -1,0 +1,246 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+    <title>Технологии ОФС</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/><script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="global-wrapper">
+      <header class="header">
+        <div class="container"><a class="header__logo" href="/"><img class="header__logo-img" src="assets/img/logo.svg" alt=""/></a>
+          <div class="header__row">
+            <nav class="header-nav">
+              <div class="header-nav__link" data-nav-more="moreNavAbout">О компании</div>
+              <div class="header-nav__link" data-nav-more="moreNavSolution">Решения</div><a class="header-nav__link" href="#">Карьера</a><a class="header-nav__link" href="#">Контакты</a>
+            </nav>
+            <div class="header-controls">
+              <button class="header-controls__lang">En</button>
+              <button class="header-controls__search"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.59 9.13641C15.59 12.902 12.5373 15.9546 8.77178 15.9546C5.0062 15.9546 1.9536 12.902 1.9536 9.13641C1.9536 5.37083 5.0062 2.31823 8.77178 2.31823C12.5373 2.31823 15.59 5.37083 15.59 9.13641ZM14.5572 14.9219C13.0766 16.4024 11.0311 17.3182 8.77178 17.3182C4.25309 17.3182 0.589966 13.6551 0.589966 9.13641C0.589966 4.61772 4.25309 0.95459 8.77178 0.95459C13.2905 0.95459 16.9536 4.61772 16.9536 9.13641C16.9536 10.9034 16.3934 12.5397 15.441 13.8771L20.3331 18.7693L19.369 19.7336L14.5572 14.9219Z" fill="black"/>
+</svg>
+              </button>
+              <button class="header-controls__callback base-button" data-modal-open="callback-modal">
+                связаться с нами<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.1709 3.69401C16.2781 3.29391 16.0406 2.88266 15.6405 2.77546L9.12049 1.02843C8.72039 0.921221 8.30914 1.15866 8.20193 1.55876C8.09473 1.95886 8.33216 2.37011 8.73226 2.47732L14.5278 4.03023L12.9749 9.82578C12.8677 10.2259 13.1052 10.6371 13.5053 10.7443C13.9054 10.8516 14.3166 10.6141 14.4238 10.214L16.1709 3.69401ZM1.96497 12.1494L15.8214 4.14942L15.0714 2.85038L1.21497 10.8504L1.96497 12.1494Z" fill="black"/>
+</svg>
+              </button>
+            </div>
+          </div>
+          <div class="header-nav-more header-nav-more--row" id="moreNavSolution">
+            <div class="header-nav-more__column header-nav-more__column--always-active">
+              <p class="header-nav-more__title">Решения</p>
+              <p class="header-nav-more__links"><a class="header-nav-more__link" href="#" data-more-level="firstLevelOne"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-09.svg" alt=""/>Бизнес направления</a><a class="header-nav-more__link" href="#" data-more-level="secondLevelOne"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-10.svg" alt=""/>Производственные мощности</a><a class="header-nav-more__link" href="#" data-more-level="thirdLevelOne"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-11.svg" alt=""/>Продукция</a></p>
+            </div>
+            <div class="header-nav-more__column js-more-level" id="firstLevelOne">
+              <p class="header-nav-more__title">Бизнес направления</p>
+              <p class="header-nav-more__links"><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-09.svg" alt=""/>Системы механизированной добычи</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-09.svg" alt=""/>Буровые долота</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-09.svg" alt=""/>Буровые сервисы</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-09.svg" alt=""/>Буровые растворы и жидкости заканчивания</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-09.svg" alt=""/>Заканчивание скважин и КРС</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-09.svg" alt=""/>Внутрискважинные операции</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-09.svg" alt=""/>Интегрированные скважинные сервисы</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-09.svg" alt=""/>Геология и разработка месторождений</a></p>
+            </div>
+            <div class="header-nav-more__column js-more-level" id="secondLevelOne">
+              <p class="header-nav-more__title">Производственные мощности</p>
+              <p class="header-nav-more__links"><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-10.svg" alt=""/>Тюменский завод нефтепромыслового оборудования</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-10.svg" alt=""/>Ойлпамп Сервис</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-10.svg" alt=""/>Цех по производству и ремонту долот</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-10.svg" alt=""/>Тюменский производственный комплекс</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-10.svg" alt=""/>Центр разработки электронных плат</a></p>
+            </div>
+            <div class="header-nav-more__column js-more-level" id="thirdLevelOne">
+              <p class="header-nav-more__title">Продукция</p>
+              <p class="header-nav-more__links"><a class="header-nav-more__link" href="#" data-more-level="thirdLevelTwoFirst"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-11.svg" alt=""/>Нефтепогружные кабели</a><a class="header-nav-more__link" href="#" data-more-level="thirdLevelTwoSecond"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-12.svg" alt=""/>Буровые долота</a></p>
+            </div>
+            <div class="header-nav-more__column js-more-level" id="thirdLevelTwoFirst">
+              <p class="header-nav-more__title">Нефтепогружные кабели</p>
+              <p class="header-nav-more__links"><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-11.svg" alt=""/>Кабель CELF</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-11.svg" alt=""/>Кабель CTTF</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-11.svg" alt=""/>Кабель CTHT</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-11.svg" alt=""/>Катушка</a></p>
+            </div>
+            <div class="header-nav-more__column js-more-level" id="thirdLevelTwoSecond">
+              <p class="header-nav-more__title">Буровые долота</p>
+              <p class="header-nav-more__links"><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-12.svg" alt=""/>Долото OTM407SX</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-12.svg" alt=""/>Долото OTM405S</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-12.svg" alt=""/>Долото OTR505S</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-12.svg" alt=""/>Долото OTM606SX</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-12.svg" alt=""/>Долото OTM505S</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="header-nav-more" id="moreNavAbout">
+          <p class="header-nav-more__title">О компании</p>
+          <p class="header-nav-more__links"><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-01.svg" alt=""/>О нас</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-02.svg" alt=""/>Присутствие</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-03.svg" alt=""/>Миссия</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-04.svg" alt=""/>Ценности</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-05.svg" alt=""/>Стратегическое развитие</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-06.svg" alt=""/>ОТ, ПБ и ООС</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-07.svg" alt=""/>Корпоративная этика и и комплаенс</a><a class="header-nav-more__link" href="#"><img class="header-nav-more__icon" src="assets/img/header-nav-icon-08.svg" alt=""/>Контакты</a></p>
+        </div>
+      </header>
+      <section class="section hero">
+        <div class="hero__video-wrapper">
+          <video class="hero__video" src=""></video>
+        </div>
+        <div class="container">
+          <div class="breadcrumbs"><a class="breadcrumbs__link" href="#">Главная</a><a class="breadcrumbs__link" href="#">Решения</a></div>
+          <div class="hero__column">
+            <h1 class="hero__title h1">Продукция - Нефтепогружные кабели</h1>
+            <div class="hero__play-button"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.5 13.634C27.1667 14.0189 27.1667 14.9811 26.5 15.366L7.75 26.1913C7.08333 26.5762 6.25 26.0951 6.25 25.3253L6.25 3.67468C6.25 2.90488 7.08334 2.42376 7.75 2.80866L26.5 13.634Z" fill="white"/>
+</svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section info">
+        <div class="container">
+          <h2 class="section__title info__title">Нефтепогружные кабели</h2>
+          <p class="info__subtitle">Компания «Технологии ОФС» разрабатывает и производит полную линейку кабелей для систем электропогружных насосов (ЭЦН) специально для нефтегазовой промышленности.</p>
+          <div class="info__row info__row--start"><img class="info__img" src="assets/img/placeholder.jpg" alt=""/>
+            <div class="info__col">
+              <h4 class="info__title-h4">Мощностие ТЗНПО обеспечивают производсто линеек кабелей:</h4>
+              <div class="info__links"><a class="info__link">
+                  КАБЕЛЬ CELF<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.62 3.95337L13.6667 8.00004L9.62 12.0467" stroke="#03BE93" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.33337 8H13.5534" stroke="#03BE93" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a><a class="info__link">
+                  КАБЕЛЬ CELF<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.62 3.95337L13.6667 8.00004L9.62 12.0467" stroke="#03BE93" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.33337 8H13.5534" stroke="#03BE93" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a><a class="info__link">
+                  КАБЕЛЬ CELF<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.62 3.95337L13.6667 8.00004L9.62 12.0467" stroke="#03BE93" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.33337 8H13.5534" stroke="#03BE93" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container"><a class="footer__logo" href="#"><img class="footer__logo-img" src="assets/img/logo.svg" alt=""/></a>
+          <nav class="footer__row">
+            <div class="footer__col"><a class="footer__link" href="#">События</a><a class="footer__link" href="#">Мероприятия</a><a class="footer__link" href="#">Опросы</a><a class="footer__link" href="#">Политики компании</a><a class="footer__link" href="#">Устойчивое развитие</a></div>
+            <div class="footer__col"><a class="footer__link footer__link--external" href="#">
+                Медиатека<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.26668 12L3.33334 11.0667L9.73334 4.66671H4.00001V3.33337H12V11.3334H10.6667V5.60004L4.26668 12Z" fill="#038073"/>
+</svg></a><a class="footer__link--external footer__link" href="https://lk.techofs.com/">
+                iКоннект<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.26668 12L3.33334 11.0667L9.73334 4.66671H4.00001V3.33337H12V11.3334H10.6667V5.60004L4.26668 12Z" fill="#038073"/>
+</svg></a></div>
+            <div class="footer__col">
+              <p class="body-2 footer__title">Мы в соц сетях</p><a class="footer__telegram" href="https://t.me/ofscareer"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM16.5734 11.8119C15.0171 12.4592 11.9068 13.7989 7.24252 15.8311C6.48511 16.1323 6.08834 16.427 6.05222 16.7151C5.99118 17.202 6.60095 17.3937 7.43129 17.6548C7.54424 17.6903 7.66127 17.7271 7.78125 17.7661C8.59818 18.0317 9.6971 18.3424 10.2684 18.3547C10.7866 18.3659 11.365 18.1523 12.0035 17.7138C16.3615 14.772 18.6112 13.2851 18.7524 13.253C18.8521 13.2304 18.9901 13.202 19.0837 13.2851C19.1772 13.3683 19.168 13.5258 19.1581 13.568C19.0977 13.8255 16.7042 16.0508 15.4655 17.2024C15.0793 17.5614 14.8054 17.816 14.7494 17.8742C14.624 18.0045 14.4962 18.1277 14.3733 18.2461C13.6144 18.9778 13.0452 19.5264 14.4048 20.4224C15.0582 20.8529 15.581 21.209 16.1026 21.5642C16.6722 21.9521 17.2404 22.339 17.9755 22.8209C18.1628 22.9437 18.3416 23.0712 18.5159 23.1954C19.1788 23.668 19.7743 24.0926 20.5101 24.0248C20.9377 23.9855 21.3793 23.5835 21.6036 22.3845C22.1336 19.5509 23.1755 13.4113 23.4163 10.8813C23.4374 10.6596 23.4108 10.376 23.3895 10.2514C23.3682 10.1269 23.3237 9.94948 23.1618 9.81813C22.9701 9.66258 22.6742 9.62978 22.5418 9.63211C21.94 9.64271 21.0167 9.96376 16.5734 11.8119Z" fill="#038073"/>
+</svg></a>
+            </div>
+          </nav>
+          <p class="footer__bottom-text body-1">Интранет - 2025</p>
+        </div>
+      </footer>
+    </div>
+    <div class="modal-wrapper">
+      <div class="modal-wrapper__content">
+        <div class="modal modal-callback" id="callback-modal">
+          <button class="modal-callback__close" data-modal-close="callback-modal"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25.9701 27.1377L12.8421 13.7245L13.686 12.8623L26.8139 26.2755L25.9701 27.1377Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.686 12L27.6578 26.2754L25.97 27.9999L11.9982 13.7245L13.686 12Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.1578 13.7244L14.0299 27.1376L13.186 26.2754L26.3139 12.8622L27.1578 13.7244Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.3423 26.2754L26.3141 12L28.0019 13.7244L14.0301 27.9999L12.3423 26.2754Z" fill="black"/>
+</svg>
+          </button>
+          <h1>Сюда нужно подставить форму имеющуюся уже на сайте</h1>
+        </div>
+        <div class="modal modal-partners" id="partners-modal">
+          <button class="modal-partners__close" data-modal-close="partners-modal"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25.9701 27.1377L12.8421 13.7245L13.686 12.8623L26.8139 26.2755L25.9701 27.1377Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.686 12L27.6578 26.2754L25.97 27.9999L11.9982 13.7245L13.686 12Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.1578 13.7244L14.0299 27.1376L13.186 26.2754L26.3139 12.8622L27.1578 13.7244Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.3423 26.2754L26.3141 12L28.0019 13.7244L14.0301 27.9999L12.3423 26.2754Z" fill="black"/>
+</svg>
+          </button>
+          <div class="modal-partners__title h4">По вопросам сотрудничества</div>
+          <form class="modal-partners-form">
+            <div class="modal-partners-progress">
+              <div class="modal-partners-progress__step active"><span class="modal-partners-progress__title">Компания</span><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2777 4.18442L7.66582 10.2257L4.98269 7.70044L4.89296 7.62513C4.58646 7.40481 4.15243 7.43562 3.88151 7.71131C3.58613 8.01181 3.59557 8.48975 3.90267 8.77888L7.21559 11.8977L7.30674 11.9742C7.64176 12.2142 8.12279 12.151 8.37879 11.8155L13.5049 5.09984L13.5702 5.00321C13.7556 4.67839 13.6706 4.2606 13.3575 4.0316C13.0161 3.78195 12.5326 3.85052 12.2777 4.18442Z" fill="white"/>
+</svg>
+              </div>
+              <div class="modal-partners-progress__line"></div>
+              <div class="modal-partners-progress__step"><span class="modal-partners-progress__title">Контактные данные</span><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2777 4.18442L7.66582 10.2257L4.98269 7.70044L4.89296 7.62513C4.58646 7.40481 4.15243 7.43562 3.88151 7.71131C3.58613 8.01181 3.59557 8.48975 3.90267 8.77888L7.21559 11.8977L7.30674 11.9742C7.64176 12.2142 8.12279 12.151 8.37879 11.8155L13.5049 5.09984L13.5702 5.00321C13.7556 4.67839 13.6706 4.2606 13.3575 4.0316C13.0161 3.78195 12.5326 3.85052 12.2777 4.18442Z" fill="white"/>
+</svg>
+              </div>
+              <div class="modal-partners-progress__line"></div>
+              <div class="modal-partners-progress__step"><span class="modal-partners-progress__title">Деятельность</span><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2777 4.18442L7.66582 10.2257L4.98269 7.70044L4.89296 7.62513C4.58646 7.40481 4.15243 7.43562 3.88151 7.71131C3.58613 8.01181 3.59557 8.48975 3.90267 8.77888L7.21559 11.8977L7.30674 11.9742C7.64176 12.2142 8.12279 12.151 8.37879 11.8155L13.5049 5.09984L13.5702 5.00321C13.7556 4.67839 13.6706 4.2606 13.3575 4.0316C13.0161 3.78195 12.5326 3.85052 12.2777 4.18442Z" fill="white"/>
+</svg>
+              </div>
+              <div class="modal-partners-progress__line"></div>
+              <div class="modal-partners-progress__step"><span class="modal-partners-progress__title">Детали</span><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2777 4.18442L7.66582 10.2257L4.98269 7.70044L4.89296 7.62513C4.58646 7.40481 4.15243 7.43562 3.88151 7.71131C3.58613 8.01181 3.59557 8.48975 3.90267 8.77888L7.21559 11.8977L7.30674 11.9742C7.64176 12.2142 8.12279 12.151 8.37879 11.8155L13.5049 5.09984L13.5702 5.00321C13.7556 4.67839 13.6706 4.2606 13.3575 4.0316C13.0161 3.78195 12.5326 3.85052 12.2777 4.18442Z" fill="white"/>
+</svg>
+              </div>
+            </div>
+            <div class="modal-partners-form__step active">
+              <p class="p1">Тут поле Название компании</p>
+              <p class="p1">Тут поле ИНН</p>
+              <p class="p1">Тут поле Адрес регистрации</p>
+              <p class="p1">Тут чекбокс Я принимаю условия Пользовательского соглашения и согласен с Политикой конфиденциальности</p>
+            </div>
+            <div class="modal-partners-form__step">
+              <p class="p1">Тут поле ФИО</p>
+              <p class="p1">Тут поле Адрес электронной почты</p>
+              <p class="p1">Тут поле Телефон</p>
+            </div>
+            <div class="modal-partners-form__step">
+              <p class="p1">Тут поле Сколько лет на рынке</p>
+              <p class="p1">Тут поле Сфера деятельности</p>
+              <p class="p1">Тут поле Отрасль</p>
+              <p class="p1">Тут поле Виды деятельности</p>
+              <p class="p1">Тут поле ОКВЭДы</p>
+            </div>
+            <div class="modal-partners-form__step">
+              <p class="p1">Тут поле Оборот млн руб в год</p>
+              <p class="p1">Тут поле Регион присутствия</p>
+              <p class="p1">Тут поле Численность персонала</p>
+              <p class="p1">Тут поле Портфолио заказчиков контрагента</p>
+              <p class="p1">Тут чекбокс Готовность предоставить пакет документов для проверки на благонадежность</p>
+              <div class="modal-partners-form__files">
+                <div class="input-file">
+                  <input class="input-file__field" type="file" accept=".pdf,.docx"/>
+                  <div class="input-file__box"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 8H14M8 14V2" stroke="#03BE93" stroke-width="2" stroke-linecap="square"/>
+</svg>
+                  </div>
+                  <div class="input-file__column">
+                    <p class="input-file__title">Загрузите документ</p>
+                    <p class="input-file__subtitle">.pdf, .docx. Файл до 2Мб</p>
+                  </div>
+                </div>
+                <div class="input-file">
+                  <input class="input-file__field" type="file" accept=".pdf,.docx"/>
+                  <div class="input-file__box"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 8H14M8 14V2" stroke="#03BE93" stroke-width="2" stroke-linecap="square"/>
+</svg>
+                  </div>
+                  <div class="input-file__column">
+                    <p class="input-file__title">Загрузите документ</p>
+                    <p class="input-file__subtitle">.pdf, .docx. Файл до 2Мб</p>
+                  </div>
+                </div>
+                <div class="input-file">
+                  <input class="input-file__field" type="file" accept=".pdf,.docx"/>
+                  <div class="input-file__box"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 8H14M8 14V2" stroke="#03BE93" stroke-width="2" stroke-linecap="square"/>
+</svg>
+                  </div>
+                  <div class="input-file__column">
+                    <p class="input-file__title">Загрузите документ</p>
+                    <p class="input-file__subtitle">.pdf, .docx. Файл до 2Мб</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-partners-form__buttons">
+              <button class="modal-partners-form__button base-button base-button--outline" id="prevStep" type="button">Назад</button>
+              <button class="modal-partners-form__button base-button active" id="nextStep" type="button">Далее</button>
+              <button class="modal-partners-form__button base-button" id="submit">
+                Отправить<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.0809 3.19401C16.1881 2.79391 15.9506 2.38266 15.5505 2.27546L9.03052 0.528427C8.63042 0.421221 8.21917 0.658657 8.11196 1.05876C8.00476 1.45886 8.24219 1.87011 8.64229 1.97732L14.4378 3.53023L12.8849 9.32578C12.7777 9.72588 13.0152 10.1371 13.4153 10.2443C13.8154 10.3516 14.2266 10.1141 14.3338 9.71401L16.0809 3.19401ZM1.875 11.6494L15.7314 3.64942L14.9814 2.35038L1.125 10.3504L1.875 11.6494Z" fill="white"/>
+</svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.42/build/spline-viewer.js"></script>
+  <script src="assets/scripts/inputmask.min.js"></script>
+  <script src="assets/scripts/linkActivator.js"></script>
+  <script src="assets/scripts/script.js"></script><script>
+</script>
+</html>

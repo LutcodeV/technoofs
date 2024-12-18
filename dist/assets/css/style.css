@@ -75,6 +75,7 @@ b {
 }
 
 .p1,
+.info__text,
 .info__list-element,
 table tbody td,
 table tbody th {
@@ -103,6 +104,7 @@ table tbody th {
 }
 
 .h4,
+.info__title-h4,
 .info__title--h4 {
   font-size: 40px;
   font-weight: 500;
@@ -110,6 +112,7 @@ table tbody th {
 }
 
 .h5,
+.info__subtitle,
 .benefit-card__text,
 table thead th {
   font-size: 24px;
@@ -1085,6 +1088,65 @@ table thead th {
   gap: 20px;
 }
 
+.info__title-h4 {
+  color: var(--Color-H-text, #07302D);
+}
+
+.info__title-h4--pale {
+  color: var(--Color-P-text, #465C5B);
+}
+
+* + .info__title-h4 {
+  margin-top: 36px;
+}
+
+.info__title-h4 + * {
+  margin-top: 20px;
+}
+
+.info__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info__text {
+  color: var(--Color-P-text, #465C5B);
+}
+
+.info__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info__link {
+  color: #03BE93;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  /* 200% */
+}
+
 .info__inner-col {
   padding-left: 68px;
   display: -webkit-box;
@@ -1143,6 +1205,7 @@ table thead th {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 20px;
+  max-width: 730px;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -1158,6 +1221,11 @@ table thead th {
   -ms-flex: 1 1 0px;
   flex: 1 1 0;
   display: block;
+}
+
+.info__img--full {
+  max-width: 100%;
+  width: 100%;
 }
 
 .info__list-wrapper {
@@ -1193,6 +1261,10 @@ table thead th {
   gap: 24px;
 }
 
+* + .info__button-wrapper {
+  margin-top: 20px;
+}
+
 .info__button-title {
   color: var(--color-h-text);
   font-size: 24px;
@@ -1216,6 +1288,10 @@ table thead th {
   gap: 12px;
 }
 
+.info__list--fill {
+  max-width: 100%;
+}
+
 .info__list-element {
   color: var(--color-p-text);
   position: relative;
@@ -1231,6 +1307,15 @@ table thead th {
   background: var(--primary);
   left: 0px;
   top: 10px;
+}
+
+.info__subtitle {
+  color: var(--color-p-text);
+  margin-top: 50px !important;
+}
+
+.info__subtitle + * {
+  margin-top: 80px;
 }
 
 .info--partners {
