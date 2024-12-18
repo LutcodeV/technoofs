@@ -120,7 +120,8 @@ table thead th {
   line-height: 150%;
 }
 
-.h6 {
+.h6,
+.info__title-h6 {
   font-size: 24px;
   font-weight: 700;
   line-height: normal;
@@ -1088,6 +1089,28 @@ table thead th {
   gap: 20px;
 }
 
+* + .info__inner-title {
+  margin-top: 56px;
+}
+
+.info__text-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 0.04em;
+  color: var(--color-h-text);
+  margin-top: 32px;
+  text-transform: uppercase;
+}
+
+.info__title-h6 {
+  color: var(--Color-P-text, #465C5B);
+}
+
+* + .info__title-h6 {
+  margin-top: 24px;
+}
+
 .info__title-h4 {
   color: var(--Color-H-text, #07302D);
 }
@@ -1104,19 +1127,16 @@ table thead th {
   margin-top: 20px;
 }
 
-.info__texts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 12px;
-}
-
 .info__text {
   color: var(--Color-P-text, #465C5B);
+}
+
+* + .info__text {
+  margin-top: 24px;
+}
+
+.info__text + .info__text {
+  margin-top: 12px;
 }
 
 .info__links {
@@ -1159,7 +1179,10 @@ table thead th {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  gap: 20px;
+}
+
+* + .info__inner-col {
+  margin-top: 20px;
 }
 
 .info__row {
@@ -1187,6 +1210,12 @@ table thead th {
   justify-content: flex-start;
 }
 
+.info__row--center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .info__row--start {
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -1204,7 +1233,6 @@ table thead th {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 20px;
   max-width: 730px;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -1221,6 +1249,8 @@ table thead th {
   -ms-flex: 1 1 0px;
   flex: 1 1 0;
   display: block;
+  position: sticky;
+  top: 120px;
 }
 
 .info__img--full {
@@ -1265,6 +1295,10 @@ table thead th {
   margin-top: 20px;
 }
 
+* + .info__button {
+  margin-top: 20px;
+}
+
 .info__button-title {
   color: var(--color-h-text);
   font-size: 24px;
@@ -1290,6 +1324,10 @@ table thead th {
 
 .info__list--fill {
   max-width: 100%;
+}
+
+* + .info__list {
+  margin-top: 20px;
 }
 
 .info__list-element {
@@ -1365,18 +1403,19 @@ table thead th {
   color: var(--color-p-text);
 }
 
-.benefit-card__text--small {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-}
-
-.benefit-card--white .benefit-card__number-wrapper {
-  background: #fff;
+.benefit-card--darken .benefit-card__number-wrapper {
+  background: #D8ECEC;
 }
 
 .benefit-card--dynamic {
-  max-width: unset;
+  max-width: 500px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0;
+}
+
+.benefit-card--dynamic:last-child {
+  max-width: 567px;
 }
 
 .table-wrapper {
